@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-asidebar-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    flex: 4 1 0;
+    background-color: rgb(46, 46, 46);
+    padding: 5px;
+}
+
+#logo-nav {
+    display: flex;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+#logo {
+    height: 70px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.asidebar,
+.asidebar2 {
+    background-color: rgb(24, 24, 24);
+    flex-grow: 1;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: rgb(117, 0, 252);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 15px 10px 15px 10px;
+}
+
+li {
+    display: inline-flex;
+    padding: 12px 7px;
+    font-size: 24px;
+    color: white;
+}
+
+.imagen-escalada {
+    height: 160px;
+    width: 220px;
+    object-fit: cover;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.box-anime {
+    height: 160px;
+    width: 220px;
+    object-fit: cover;
+}
+
+.foot {
+    display: flex;
+    height: 70px;
+    background-color: darkgoldenrod;
+}
+
+/* Aquí comienza la sección de episodios*/
+
+.cover-largo {
+    display: flex;
+    height: 360px;
+    padding: 3em 0 8px 4em;
+}
+
+.cover {
+    object-fit: cover
+}
+
+#ani-info {
+    display: flex;
+    align-items: center;
+}
+
+#Anime-Desc {
+    display: flex;
+    flex-direction: column;
+    /* Permite que el contenido se apile verticalmente */
+    padding-left: 1.5em;
+    width: 35em;
+    height: 10em;
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+}
+
+p {
+    color: white;
+}
+
+#Anime-Desc p {
+    flex: 1;
+    /* Permite que el párrafo se estire para llenar el espacio disponible */
+    margin: 0;
+    /* Elimina márgenes que podrían causar desbordamiento */
+    overflow: auto;
+    /* Agrega una barra de desplazamiento si el contenido es demasiado largo */
+    word-wrap: break-word;
+    /* Permite que el texto se rompa en palabras para ajustarse al contenedor */
+    line-height: 1.5;
+    /* Ajusta la altura de línea para mejorar la legibilidad */
+}
+
+
+@media (max-width: 920px) {
+    li {
+        font-size: 22px;
+        padding-left: 0;
+    }
+
+    #logo {
+        padding-left: 7px;
+    }
+
+    .asidebar,
+    .asidebar2 {
+        flex-grow: 0;
+    }
+
+    .imagen-escalada,
+    .box-anime {
+        height: 120px;
+        width: 175px;
+    }
+
+    .cover-largo {
+        height: 220px;
+        padding: 15px;
+    }
+
+    #Anime-Desc {
+        width: 15em;
+        padding-bottom: 30px;
+    }
+
+    h1{
+        font-size: 25px;
+        width: 8em;
+        padding-right: 4px;
+    }
+
+
+}
+
+@media (max-height: 768px) and (orientation: landscape) {
+
+    .asidebar,
+    .asidebar2 {
+        flex-grow: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        flex-grow: 8;
+    }
+
+    .imagen-escalada,
+    .box-anime {
+        height: 120px;
+        width: 170px;
+    }
+    
+}
+
+@media (max-height: 740px) {
+    li {
+        font-size: 20px;
+    }
+
+    .imagen-escalada,
+    .box-anime {
+        height: 115px;
+        width: 165px;
+    }
+
+    .cover-largo {
+
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 360px)  {
+    li {
+        font-size: 18px;
+        /* Ajusta el tamaño de la fuente si es necesario */
+    }
+
+    .imagen-escalada,
+    .box-anime {
+        height: 100px;
+        width: 150px;
+  
+    }
+
+    .main {
+        padding: 5px;
+        /* Ajusta el relleno si es necesario */
+    }
+
+    .foot {
+        height: 50px;
+        /* Ajusta la altura del pie de página */
+    }
+
+    h1{
+
+        font-size: 25px;
+   
+    }
+
+    .cover-largo {
+
+        height: 190px;
+        padding-right: 0;
+        padding-left: 12px;
+    }
+
+    #Anime-Desc {
+        width: 13em;
+        padding-bottom: 3em;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    #Anime-Desc {
+        width: 13em;
+        padding-bottom: 3em;
+    }
+
+
+    h1{
+
+        font-size: 25px;
+   
+    }
+
+    .cover-largo {
+
+        height: 190px;
+        padding-right: 0;
+        padding-left: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    #Anime-Desc {
+        width: 14.5em;
+        padding-bottom: 3em;
+    }
+
+    h1{
+
+        font-size: 22px;
+        width: 8em;
+    }
+
+    .cover-largo {
+
+        height: 190px;
+    }
+
+    .cover-largo {
+
+        height: 190px;
+        padding-right: 0;
+        padding-left: 12px;
+    }
+}
+
+@media (max-width: 412px){
+
+    #Anime-Desc {
+        width: 13em;
+        padding-bottom: 3em;
+    }
+
+    h1{
+
+        font-size: 19px;
+        width: 10.5em;
+        margin-right: 0;
+    }
+
+    .cover-largo {
+
+        height: 190px;
+        padding-right: 0px;
+        padding-left: 12px
+    }
+}
+
+#aa{
+    color:darkgoldenrod;
+    
+}

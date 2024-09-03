@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+# Reescribe URLs para que apunten al archivo index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
